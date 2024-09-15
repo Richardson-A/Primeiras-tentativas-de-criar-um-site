@@ -1,0 +1,58 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+}
+
+p.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #27ae60;
+    text-align: center;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+
+/* Container dos carros */
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cada item de carro */
+.car-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .car-item {
+        width: 100%;
+    }}
